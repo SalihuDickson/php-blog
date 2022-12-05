@@ -1,0 +1,352 @@
+.app .container {
+  width: 1024px;
+  margin: auto;
+}
+.app .container .error {
+  /* color: red; */
+  color: white;
+  background-color: rgba(255, 0, 0, 0.844);
+  padding: 8px;
+  width: max-content;
+}
+.app .container .edit-image {
+  height: 300px;
+  object-fit: contain;
+}
+.app .container .link {
+  text-decoration: none;
+  color: inherit;
+}
+.app .container .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b9e7e7;
+}
+.app .container .auth .link {
+  color: rgb(3, 194, 194);
+}
+
+.app .container .auth h1 {
+  font-size: 20px;
+  color: teal;
+  margin-bottom: 20px;
+}
+.app .container .auth form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: white;
+  width: 200px;
+  gap: 20px;
+}
+.app .container .auth form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.app .container .auth form button {
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+.app .container .auth form .error {
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  color: red;
+  text-align: center;
+}
+.app .container .auth form span {
+  font-size: 12px;
+  text-align: center;
+}
+.app .container .navbar .container {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app .container .navbar .container .logo img {
+  width: 120px;
+}
+.app .container .navbar .container .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.app .container .navbar .container .links h6 {
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.app .container .navbar .container .links span {
+  cursor: pointer;
+}
+.app .container .navbar .container .links .write {
+  background-color: #b9e7e7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.app .container .navbar .container .links .write:hover {
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+}
+.app .container footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #b9e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app .container footer img {
+  height: 50px;
+}
+.app .container .home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.app .container .home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+.app .container .home .posts .post:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.app .container .home .posts .post .img {
+  flex: 2;
+  position: relative;
+  height: max-content;
+}
+.app .container .home .posts .post .img:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #b9e7e7;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+.app .container .home .posts .post .img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.app .container .home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .container .home .posts .post .content h1 {
+  font-size: 40px;
+}
+.app .container .home .posts .post .content p {
+  font-size: 16px;
+  margin: 60px 0;
+}
+.app .container .home .posts .post .content .button {
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
+.app .container .home .posts .post .content .button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}
+.app .container .single {
+  display: flex;
+  gap: 50px;
+}
+.app .container .single .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app .container .single .content img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.app .container .single .content .user {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font-size: 14px;
+}
+.app .container .single .content .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.app .container .single .content .user .info {
+  height: 85%;
+}
+
+.app .container .single .content .user span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.app .container .single .content .user .edit {
+  display: flex;
+  gap: 5px;
+}
+
+.app .container .single .content .user .edit button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.app .container .single .content .user .edit img {
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+.app .container .single .content h1 {
+  font-size: 42px;
+  color: #333;
+}
+.app .container .single .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+.app .container .single .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.app .container .single .menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+.app .container .single .menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app .container .single .menu .post img {
+  width: 100%;
+  object-fit: cover;
+}
+.app .container .single .menu .post h2 {
+  color: #555;
+}
+.app .container .single .menu .post .button {
+  width: max-content;
+  padding: 7.5px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
+.app .container .single .menu .post .button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}
+.app .container .add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.app .container .add .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .content input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer {
+  height: 380px;
+  overflow-y: scroll;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+.app .container .add .content .editorContainer .editor {
+  height: 100%;
+  width: calc(100% - 5px);
+  outline: none;
+  border: none;
+  resize: none;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.app .container .add .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .menu .item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+.app .container .add .menu h1 {
+  font-size: 20px;
+}
+.app .container .add .menu .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app .container .add .menu .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .add .menu .buttons :first-child {
+  cursor: pointer;
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+.app .container .add .menu .buttons :last-child {
+  cursor: pointer;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+  padding: 3px 5px;
+}
+.app .container .add .menu .cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: teal;
+  cursor: pointer;
+}

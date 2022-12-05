@@ -1,0 +1,17 @@
+{
+  "name": "salihu/php-blog",
+  "description": "a simple crud app built with php",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "authors": [
+    {
+      "name": "salihuDickson",
+      "email": "salihudickson@gmail.com"
+    }
+  ],
+  "require": {}
+}
